@@ -1,0 +1,177 @@
+@keyframes blinking {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2em;
+
+    background-color:  rgb(10, 22, 12);
+}
+
+h4, p, a {
+    color: hsl(139, 55%, 83%);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80vw;
+    padding: 0.5em;
+    text-align: center;
+    color: rgb(180, 210, 182);
+}
+
+#header-cursor {
+    width: 1.25em;
+    height: 1.275em;
+
+    margin: 0.25em;
+
+    border-bottom: 0.125em rgb(180, 210, 182) solid;;
+
+    animation: blinking 0.5s alternate infinite;
+}
+
+nav {
+    position: sticky;
+    background-color: rgb(25, 51, 28);
+    text-align: center;
+}
+
+nav a {
+    color: hsl(139, 55%, 83%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+
+    position: relative;
+    right: 3em;
+
+    width: 60em;
+}
+
+#intro {
+    display: flex;
+    flex-flow: row nowrap;
+
+    position: relative;
+}
+
+header, nav, footer {
+    width: 50em;
+    border-radius: 5px;
+}
+
+#tv {
+    position: relative;
+    top: -1em;
+    right: -4.5em;
+
+    transform: rotate(-5deg);
+
+    margin: 2em;
+    padding: 2em;
+}
+
+#tv-frame {
+    position: absolute;
+    top: -3em;
+    right: -2em;
+
+    width: 30em;
+}
+
+#me-silly {
+    width: 20em;
+    padding: 0.5em;
+}
+
+article {
+    background-color: rgb(25, 51, 28);
+
+    outline: 0.125em dashed rgb(180, 210, 182);
+    outline-offset: -1em;
+
+    padding: 1em 3em;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(75, 150, 160);
+    color: rgb(180, 210, 210);
+    text-align: center;
+}
+
+footer a {
+    color: rgb(180, 210, 210);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1.25em;
+}
+
+li {
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 799px) {
+    main {
+        display: flex;
+        flex-flow: row wrap;
+
+        position: static;
+
+        width: 27.5em;
+    }
+
+    #intro {
+        display: flex;
+        flex-flow: row wrap;
+
+        position: static;
+    }
+
+    #tv {
+        position: relative;
+        right: 0.5em;
+    }
+}
