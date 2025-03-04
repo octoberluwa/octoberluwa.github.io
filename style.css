@@ -23,6 +23,10 @@ h4, p, a {
     color: hsl(139, 55%, 83%);
 }
 
+.important {
+    font-size: 1.5em;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -47,8 +51,12 @@ header {
 
 nav {
     position: sticky;
+    top: -0.75vh;
+
     background-color: rgb(25, 51, 28);
     text-align: center;
+
+    z-index: 100;
 }
 
 nav a {
@@ -63,7 +71,7 @@ nav a:hover {
 
 main {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: column;
 
     position: relative;
     right: 3em;
@@ -71,15 +79,36 @@ main {
     width: 60em;
 }
 
-#intro {
+#portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    right: -6.75em;
+
+    max-width: 55em;
+    margin-bottom: 3em;
+}
+
+#intro, #skills, #education, #contact {
     display: flex;
     flex-flow: row nowrap;
 
+    margin-bottom: 3em;
+}
+
+#skills, #contact {
     position: relative;
+    right: -10em;
+}
+
+#contact {
+    height: 20em;
 }
 
 header, nav, footer {
-    width: 50em;
+    width: 60em;
     border-radius: 5px;
 }
 
@@ -105,6 +134,30 @@ header, nav, footer {
 #me-silly {
     width: 20em;
     padding: 0.5em;
+}
+
+#books {
+    position: relative;
+    top: -1em;
+    right: 7em;
+
+    width: 27.5em;
+}
+
+#keyboard {
+    position: relative;
+    right: -7.5em;
+
+    transform: rotate(-35deg);
+
+    width: 25em;
+}
+
+#pigeon {
+    position: relative;
+    right: 10em;
+
+    width: 20em;
 }
 
 article {
@@ -163,7 +216,7 @@ li {
         width: 27.5em;
     }
 
-    #intro {
+    #intro, #skills, #education, #contact {
         display: flex;
         flex-flow: row wrap;
 
@@ -173,5 +226,9 @@ li {
     #tv {
         position: relative;
         right: 0.5em;
+    }
+
+    #books, #keyboard, #portfolio, #pigeon {
+        right: 0em;
     }
 }
