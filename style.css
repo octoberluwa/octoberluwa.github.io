@@ -23,11 +23,11 @@ body {
     background-color:  rgb(10, 22, 12);
 }
 
-h1 {
+header h1 {
     margin: 0px !important;
 }
 
-h4, p, a {
+h1, h2, h3, h4, p, a {
     color: hsl(139, 55%, 83%);
 }
 
@@ -213,6 +213,58 @@ ul li {
 
 li {
     list-style-type: none;
+}
+
+#signin {
+    width: 20em;
+    padding: 3em;
+
+    background-color: rgb(25, 51, 28);
+
+    outline: 0.125em dashed rgb(180, 210, 182);
+    outline-offset: -1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 0.5em;
+    margin: 1em;
+
+    color: rgb(180, 210, 182);
+
+    background-color: rgb(25, 51, 28);
+
+    border: 0.175em solid rgb(180, 210, 182);
+    border-radius: 0.5em;
+}
+
+input:focus {
+    outline: 0.25em solid rgb(180, 210, 182);
+}
+
+button {
+    padding: 0.5em;
+
+    color: rgb(25, 51, 28);
+
+    background-color: rgb(180, 210, 182);
+
+    border: none;
+    border-radius: 0.5em;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(139, 170, 141);
 }
 
 @media only screen and (max-width: 799px) {
