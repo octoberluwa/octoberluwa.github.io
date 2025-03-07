@@ -1,15 +1,17 @@
 @keyframes blinking {
     from {
         opacity: 0;
-    }
-
-    to {
+    } to {
         opacity: 1;
     }
 }
 
-html {
-	scroll-behavior: smooth !important;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
 }
 
 body {
@@ -301,5 +303,9 @@ button:hover {
 
     #books, #keyboard, #projects, #pigeon {
         right: 0em;
+    }
+
+    #intro, #skills {
+        width: 27.5em;
     }
 }
