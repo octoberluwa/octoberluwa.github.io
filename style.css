@@ -8,6 +8,10 @@
     }
 }
 
+html {
+	scroll-behavior: smooth !important;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -17,6 +21,10 @@ body {
     padding: 2em;
 
     background-color:  rgb(10, 22, 12);
+}
+
+h1 {
+    margin: 0px !important;
 }
 
 h4, p, a {
@@ -33,7 +41,7 @@ header {
     justify-content: center;
 
     width: 80vw;
-    padding: 0.5em;
+    padding-top: 3em;
     text-align: center;
     color: rgb(180, 210, 182);
 }
@@ -79,7 +87,12 @@ main {
     width: 60em;
 }
 
-#portfolio {
+#intro, #skills, #education, #contact {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#projects {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,14 +101,6 @@ main {
     right: -6.75em;
 
     max-width: 55em;
-    margin-bottom: 3em;
-}
-
-#intro, #skills, #education, #contact {
-    display: flex;
-    flex-flow: row nowrap;
-
-    margin-bottom: 3em;
 }
 
 #skills, #contact {
@@ -105,6 +110,10 @@ main {
 
 #contact {
     height: 20em;
+}
+
+#intro, #skills, #projects, #education, #contact {
+    padding-top: 3em;
 }
 
 header, nav, footer {
@@ -207,6 +216,16 @@ li {
 }
 
 @media only screen and (max-width: 799px) {
+    nav {
+        width: 100vw;
+        font-size: 0.75em;
+    }
+
+    ul {
+        position: relative;
+        right: 2em;
+    }
+
     main {
         display: flex;
         flex-flow: row wrap;
@@ -228,7 +247,7 @@ li {
         right: 0.5em;
     }
 
-    #books, #keyboard, #portfolio, #pigeon {
+    #books, #keyboard, #projects, #pigeon {
         right: 0em;
     }
 }
