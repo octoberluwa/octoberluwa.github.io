@@ -14,6 +14,22 @@
     }
 }
 
+#texture {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background-image: url("./images/newspaper.png");
+    background-size: cover;
+
+    mix-blend-mode: multiply;
+
+    z-index: -1;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -21,8 +37,32 @@ body {
     justify-content: center;
 
     padding: 2em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
 
-    background-color:  rgb(10, 22, 12);
+    font-family: "Inconsolata", monospace;
+
+    background-color:  rgb(44, 56, 45);
+
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    display: block;
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background-image: linear-gradient(rgba(20, 20, 20, 0) 66%, rgba(0, 0, 0, 0.25) 33%);
+    background-size: 120% 2px, 3px 120%;
+
+    z-index: 999;
+    pointer-events: none;
 }
 
 header h1 {
@@ -31,6 +71,14 @@ header h1 {
 
 h1, h2, h3, h4, p, a {
     color: hsl(139, 55%, 83%);
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+h3 {
+    text-decoration: underline;
 }
 
 .important {
@@ -43,18 +91,22 @@ header {
     justify-content: center;
 
     width: 80vw;
-    padding-top: 3em;
+    padding-top: 1em;
     text-align: center;
     color: rgb(180, 210, 182);
+
+    font-family: "Arvo", serif;
+    font-weight: 700;
+
+    letter-spacing: 0.5em;
+    font-size: 2.25vw;
 }
 
 #header-cursor {
     width: 1.25em;
     height: 1.275em;
 
-    margin: 0.25em;
-
-    border-bottom: 0.125em rgb(180, 210, 182) solid;;
+    border-bottom: 0.275em rgb(180, 210, 182) solid;;
 
     animation: blinking 0.5s alternate infinite;
 }
@@ -66,7 +118,9 @@ nav {
     background-color: rgb(25, 51, 28);
     text-align: center;
 
-    z-index: 100;
+    box-shadow: 0px 0.5em 0.75em;
+
+    z-index: 998;
 }
 
 nav a {
@@ -84,7 +138,7 @@ main {
     flex-direction: column;
 
     position: relative;
-    right: 3em;
+    right: 4em;
 
     width: 60em;
 }
@@ -149,15 +203,15 @@ header, nav, footer {
 
 #books {
     position: relative;
-    top: -1em;
-    right: 7em;
+    top: 0.5em;
+    right: 6em;
 
     width: 27.5em;
 }
 
 #keyboard {
     position: relative;
-    right: -7.5em;
+    right: -6.5em;
 
     transform: rotate(-35deg);
 
@@ -171,6 +225,12 @@ header, nav, footer {
     width: 20em;
 }
 
+#tv, #books, #keyboard, #pigeon {
+    filter: drop-shadow(0.75em 0.75em 0.625em);
+
+    z-index: 555;
+}
+
 article {
     background-color: rgb(25, 51, 28);
 
@@ -180,25 +240,18 @@ article {
     padding: 1em 3em;
 }
 
+article, #signin {
+    filter: drop-shadow(1em 1em);
+}
+
 h4 {
     font-size: 1em;
     font-weight: bold;
 }
 
 footer {
-    background-color: rgb(75, 150, 160);
-    color: rgb(180, 210, 210);
+    margin-top: 2em;
     text-align: center;
-}
-
-footer a {
-    color: rgb(180, 210, 210);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
 
 ul {
@@ -241,6 +294,7 @@ input {
     margin: 1em;
 
     color: rgb(180, 210, 182);
+    font-family: "Inconsolata", monospace;
 
     background-color: rgb(25, 51, 28);
 
@@ -256,6 +310,7 @@ button {
     padding: 0.5em;
 
     color: rgb(25, 51, 28);
+    font-family: "Inconsolata", monospace;
 
     background-color: rgb(180, 210, 182);
 
@@ -307,5 +362,9 @@ button:hover {
 
     #intro, #skills {
         width: 27.5em;
+    }
+
+    header {
+        font-size: 1.75em;
     }
 }
