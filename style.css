@@ -131,7 +131,7 @@ header {
 
     font-size: 2.25vw;
     color: var(--primary-colour);
-    text-shadow: 0.275em 0.275em  var(--shadow-colour);
+    text-shadow: 0.225em 0.225em  var(--shadow-colour);
 
     text-align: center;
     letter-spacing: 0.5em;
