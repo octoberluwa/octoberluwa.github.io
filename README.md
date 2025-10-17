@@ -1,12 +1,10 @@
 # 🟩 Portfolio Website 🟩
 
-> _“Welcome to my portfolio website!”_
-
----
+This portfolio is a **dark-themed, terminal-style personal website** designed to evoke a vintage computer vibe.
+<img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/c29af61f-0c93-438d-9547-6110903816dd" />
 
 ## 🧩 About the Site
 
-This portfolio is a **dark-themed, terminal-style personal website** designed to evoke a vintage hacker/computer vibe.  
 It includes the following sections:
 
 - **About Me** – Introduction, current studies, and a downloadable CV.
@@ -29,6 +27,6 @@ The site is built using a combination of modern and **minimalist** web technolog
 
 ---
 
-## 🍋‍🟩 Website Link
+## 🍋‍🟩 Getting Started
 
-https://octoberluwa.github.io/
+1. Open https://octoberluwa.github.io/ in your web browser.
