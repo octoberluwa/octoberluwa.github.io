@@ -2,7 +2,7 @@
     --primary-colour: rgb(180, 210, 180);
     --secondary-colour: rgb(25, 50, 25);
     --shadow-colour: rgba(0, 0, 0, 0.55);
-    --background-colour: rgb(45, 55, 45);
+    --background-colour: rgb(36, 46, 36);
 }
 
 @keyframes blinking {
@@ -25,6 +25,7 @@
     background-size: cover;
 
     mix-blend-mode: multiply;
+    opacity: 0.8;
 
     z-index: -1;
 }
@@ -63,6 +64,7 @@ body::before {
 
 h1, h2, h3, h4, p, a {
     color: var(--primary-colour);
+    text-shadow: 0.25em 0.25em 0.25em rgba(0, 0, 0, 0.65);
 }
 
 h2 {
@@ -85,8 +87,8 @@ nav {
 
     text-align: center;
 
-    background-color: var(--secondary-colour);
-    box-shadow: 0px 0.5em 0.75em;
+    background: linear-gradient(0deg,rgba(21, 36, 7, 1) 0%, rgba(25, 50, 25, 1) 100%);
+    box-shadow: 0px 0.75em 1.5em;
 
     border-radius: 0.325em;
 
@@ -98,7 +100,7 @@ ul {
     align-items: center;
     justify-content: center;
 
-    padding: 0px !important;
+    padding: 0px;
 }
 
 ul li {
@@ -249,7 +251,7 @@ main {
 article {
     padding: 1em 3em;
 
-    background-color: var(--secondary-colour);
+    background: linear-gradient(0deg,rgba(27, 46, 10, 0.349) 0%, rgba(25, 50, 25, 1) 100%);
 
     outline: 0.125em dashed var(--primary-colour);
     outline-offset: -1em;
@@ -325,11 +327,10 @@ button:hover {
 
     ul {
         position: relative;
-        right: 2em;
     }
 
     header {
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
 
     main, #intro, #skills {
