@@ -4,6 +4,8 @@ This portfolio is a **dark-themed, terminal-style personal website** designed to
 
 <img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/c29af61f-0c93-438d-9547-6110903816dd" />
 
+---
+
 ## 🧩 About the Site
 
 It includes the following sections:
